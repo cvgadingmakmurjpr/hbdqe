@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Qeyra ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" src="music.mp3"></audio>
+
+<!-- START -->
+<div class="start" id="start">
+    <button id="openBtn">Open sini chaqeya </button>
+</div>
+
+<!-- CARD -->
+<div class="card hidden" id="card">
+    <div class="heart">❤️</div>
+    <h1>To Qeyra</h1>
+
+    <p id="text"></p>
+
+    <div class="footer">— Joval </div>
+
+    <!-- QUESTION -->
+    <div id="questionBox" class="hidden">
+        <p>Do you love me? </p>
+        <button onclick="yes()">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <!-- OPEN BOOK BUTTON -->
+    <button id="bookBtn" class="hidden" onclick="openBook()">📖 Open Our Story</button>
+
+    <!-- FLIPBOOK -->
+    <div id="bookContainer" class="flipbook hidden">
+        <iframe 
+            src="https://heyzine.com/flip-book/d79d199df2.html"
+            width="100%" 
+            height="500px"
+            frameborder="0">
+        </iframe>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
